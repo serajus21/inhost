@@ -1,0 +1,61 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+:root {font-size: 16px;}
+body {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url("background.png") no-repeat fixed center; background-size: cover;
+}
+
+/* header */
+header {display: flex; justify-content: space-around; align-items: center; max-width: 1200px; margin: 1em auto;}
+header .logo {height: 30px; display: block;}
+header .navigation a {color: rgb(255, 217, 0); text-decoration: none; font-size: 1rem; padding: .5em 1em; font-weight: bold;}
+header .navigation a:hover {color: pink;}
+header .join {display: flex;}
+header .join a {color: rgb(255, 255, 255); text-decoration: none; font-size: 1rem; padding: 0.5em 1em; margin: 0 0.5em; border: 0.1em solid; font-weight: bold;}
+header .join a:hover {color: yellow;}
+.menuBar {background: transparent; border: none; font-size: 1.5rem; width: 1.5em; font-family: Verdana, Geneva, Tahoma, sans-serif;  display: none; cursor: pointer; position: absolute; color: transparent;}
+#show {rotate: 90deg;}
+
+/* main */
+main {max-width: 700px; padding: 7em 5em;}
+main span {display: block;}
+.subheading {font-size: 1.2em; color: white; font-weight: bold;}
+.mainHeading {font-size: 4em; color: pink; margin: 0.2em 0; font-weight: bold;}
+.details {font-size: 1em; color: white; margin: 1em 0; font-weight: lighter;}
+main button {font-size: 1em; padding: 0.6em 1.5em; margin: 0.8em 0; border: none; background-color: hotpink; font-weight: bold; border-radius: 0.5em; cursor: pointer;}
+main button:hover {background-color: yellow;}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+    :root {font-size: 14px;}
+}
+
+@media (max-width: 600px) {
+    :root {font-size: 10px;}
+}
+
+@media (max-width: 450px) {
+    :root {font-size: 9px;}
+    .menuBar {color: white; position: static;}
+    #show {display: block;}
+    header {justify-content: space-between; padding: 0 1rem;}
+    header .navigation {
+        position: fixed; top: 5.5rem; right: -100%; background-color: black; width: 100%; height: 100vh;
+        display: flex; flex-direction: column; align-items: center; background-color: rgba(0, 0, 0, 0.8);
+        transition: all 250ms linear;
+    }
+    header .navigation a {margin: 1em 0; font-size: 1.5em;}
+}
+
+@media (max-width: 370px) {
+    :root {font-size: 7px;}
+}
+
